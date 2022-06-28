@@ -1,0 +1,44 @@
+/*Body style*/
+
+body {
+    background: #000;
+    color: #fff;
+    padding: 25px;
+    font-family: sans-serif;
+  }
+
+
+/*Header style*/
+
+header{
+    text-align: center;
+  }
+
+  
+/*Navbar style*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    display: inline-block;
+  }
+
+nav li {
+    float:left;
+  }
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(26, 26, 26);
+  }
+  
+
