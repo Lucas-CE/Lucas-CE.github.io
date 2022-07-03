@@ -2,9 +2,9 @@
 
 body {
     color: #fff;
-    padding: 15px 30px;
     font-family: sans-serif;
-    background-image: url("fondo.jpg");
+    background-color: rgb(31, 31, 31);
+    margin: 0px;
   }
 
 
@@ -12,12 +12,22 @@ body {
 
 header{
     text-align: center;
-    width: 700px;
-    margin: 0px auto;
+    background-image: url("gris.jpg");
+    background-size: 100%;
+    overflow:auto;
+    color: rgb(255, 255, 255);
   }
 
-  
+header p{
+  text-align: center;
+}
+
+
 /*Navbar style*/
+
+nav {
+  margin-top: 12px;
+}
 
 nav ul {
     list-style-type: none;
@@ -40,16 +50,29 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(31, 43, 88);
   }
   
-
 
 /*Presentation style*/
 
 #presentation {
   padding: 10px;
-  margin-top: 15px;
-  background-color: black;
-  opacity: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 700px;
+  margin: 12px auto;
+}
+
+
+/*Cuerpo style*/
+
+.cuerpo {
+  margin: 5%;
+}
+
+
+/*Parrafos style*/
+
+p {
+  text-align: justify;
 }
