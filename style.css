@@ -16,6 +16,7 @@ header{
     background-size: 100%;
     overflow:auto;
     color: rgb(255, 255, 255);
+    padding-bottom:30px;
   }
 
 header p{
@@ -50,7 +51,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgb(31, 43, 88);
+    background-color: rgba(75, 75, 75, 0.7);
   }
   
 
@@ -58,9 +59,10 @@ nav li a:hover {
 
 #presentation {
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   width: 700px;
   margin: 12px auto;
+  border-radius: 8px;
 }
 
 
