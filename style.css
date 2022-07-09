@@ -17,17 +17,25 @@ body {
 
 /*Header style*/
 
-header{
+header .background {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  filter: blur(2px);
+}
+
+header .content{
     height: 650px;
     text-align: center;
-    background-image: url("fondo.jpg");
-    background-size: 100%;
     overflow:auto;
     color: rgb(255, 255, 255);
     padding-bottom:30px;
+    position: relative;
   }
 
-header p{
+header .content p{
   text-align: center;
 }
 
