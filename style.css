@@ -1,3 +1,10 @@
+
+/*All elements*/
+
+* {
+  box-sizing: border-box;
+}
+
 /*Body style*/
 
 body {
@@ -11,8 +18,9 @@ body {
 /*Header style*/
 
 header{
+    height: 650px;
     text-align: center;
-    background-image: url("gris.jpg");
+    background-image: url("fondo.jpg");
     background-size: 100%;
     overflow:auto;
     color: rgb(255, 255, 255);
@@ -47,7 +55,9 @@ nav li a {
     display: block;
     color: white;
     padding: 14px 16px;
+    margin: 10px;
     text-decoration: none;
+    font-size:130%;
 }
 
 nav li a:hover {
@@ -59,11 +69,23 @@ nav li a:hover {
 /*Presentation style*/
 
 #presentation {
+  width: 70%;
+  height: 60%;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  width: 700px;
-  margin: 12px auto;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 30px auto;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+#presentation h1 {
+  font-size:500%;
+}
+
+
+#presentation p {
+  font-size:150%;
+  margin: auto 5%;
 }
 
 
@@ -78,4 +100,24 @@ nav li a:hover {
 
 p {
   text-align: justify;
+}
+
+
+/*Education*/
+
+#education .boxes {
+  display: flex;
+}
+
+/*In eduaction*/
+
+/*Colegio*/
+.colegio {
+  flex: 0 0 50%;
+  margin-right: 5%;
+}
+
+/*Univerisdad*/
+.universidad {
+  flex: 1;
 }
