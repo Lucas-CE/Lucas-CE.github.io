@@ -19,12 +19,12 @@ body {
 /*Header style*/
 
 header .background {
-  background-image: url("imagenes/fondo.jpg");
+  background-image: url("imagenes/fondo2.jpg");
   background-size: cover;
   position: absolute;
   height: 650px;
   width: 100%;
-  filter: blur(2px);
+  filter: blur(0px);
 }
 
 header .content{
@@ -67,7 +67,7 @@ nav li a {
     padding: 14px 16px;
     margin: 10px;
     text-decoration: none;
-    font-size:130%;
+    font-size:110%;
 }
 
 nav li a:hover {
@@ -78,14 +78,22 @@ nav li a:hover {
 
 /*Presentation style*/
 
+
 #presentation {
   width: 70%;
   height: 60%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
   margin: 30px auto;
-  border-radius: 8px;
   overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+#presentation .background {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(10px);
 }
 
 #presentation h1 {
