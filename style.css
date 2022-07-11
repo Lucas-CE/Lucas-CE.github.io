@@ -9,9 +9,10 @@
 
 body {
     color: #fff;
-    font-family: sans-serif;
+    font-family: Arial;
     background-color: rgb(31, 31, 31);
     margin: 0px;
+    font-size: 20px;
   }
 
 
@@ -37,6 +38,7 @@ header .content{
 
 header .content p{
   text-align: center;
+  line-height: 33px;
 }
 
 
@@ -87,20 +89,20 @@ nav li a:hover {
 }
 
 #presentation h1 {
-  font-size:500%;
+  font-size: 6vw;
 }
 
 
 #presentation p {
-  font-size:150%;
-  margin: auto 5%;
+  font-size:130%;
+  margin: 5%;
 }
 
 
 /*Cuerpo style*/
 
 .cuerpo {
-  margin: 5%;
+  margin: 5% 7%;
 }
 
 
@@ -108,24 +110,48 @@ nav li a:hover {
 
 p {
   text-align: justify;
+  line-height: 30px;
+}
+
+/*Cajas contenedoras de informacion o img style*/
+.boxes {  display: flex;
+  justify-content:space-between;
+  margin-bottom: 70px;
+}
+
+/*About me style*/
+
+#about-me .boxes img {
+  border-radius: 50%;
+  height: auto;
+  margin-top: 30px;
+}
+
+#about-me .boxes .info {
+  width: 800px;
+}
+
+#about-me h1 {
+  text-align: left;
 }
 
 
 /*Education*/
 
-#education .boxes {
-  display: flex;
-}
-
-/*In eduaction*/
+/*In education*/
 
 /*Colegio*/
-.colegio {
-  flex: 0 0 50%;
-  margin-right: 5%;
+
+#education .boxes .info {
+  width: 800px;
 }
 
-/*Univerisdad*/
-.universidad {
-  flex: 1;
+#education .boxes img {
+  border-radius: 10%;
+  transform: scale(0.9);
+  margin-left: 20px;
 }
+
+
+/*Univerisdad*/
+
