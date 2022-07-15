@@ -163,3 +163,16 @@ p {
 
 /*Univerisdad*/
 
+
+/*Projects*/
+
+.projects .boxes {
+  justify-content:left;
+}
+
+.projects img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
