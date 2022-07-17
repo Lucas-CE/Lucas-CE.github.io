@@ -89,11 +89,11 @@ nav li a:hover {
 }
 
 #presentation .background {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 100%;
   width: 100%;
-  filter: blur(10px);
+  backdrop-filter: blur(2px);
 }
 
 #presentation h1 {
@@ -154,13 +154,21 @@ p {
 
 /*Education*/
 
+#education {
+  margin-bottom: 80px;
+}
+
 /*In education*/
+
+#education .boxes {
+  margin-bottom: 15px;
+}
 
 /*Colegio*/
 
 #education .boxes img {
   border-radius: 10%;
-  transform: scale(0.9);
+  transform: scale(0.8);
   margin-left: 20px;
 }
 
@@ -168,15 +176,23 @@ p {
 /*Univerisdad*/
 
 
-/*Projects*/
+/*Interests*/
 
-.projects .boxes {
-  justify-content:left;
+#interests {
+  margin-bottom: 80px;
 }
 
-.projects img {
+
+/*Projects*/
+
+#projects .boxes {
+  justify-content:space-around;
+  margin-top: 4%;
+}
+
+#projects img {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
