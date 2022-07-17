@@ -19,7 +19,7 @@ body {
 /*Header style*/
 
 header .background {
-  background-image: url("imagenes/fondo2.jpg");
+  background-image: url("imagenes/fondo.jpg");
   background-size: cover;
   position: absolute;
   height: 650px;
@@ -89,7 +89,7 @@ nav li a:hover {
 }
 
 #presentation .background {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.75);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -124,19 +124,27 @@ p {
 /*Cajas contenedoras de informacion o img style*/
 .boxes {  display: flex;
   justify-content:space-between;
+  align-items: center;
   margin-bottom: 70px;
 }
 
+.boxes .info {
+  width: 70%;
+  height: min-content;
+  vertical-align: middle;
+}
+
+
+
 /*About me style*/
+
+#about-me {
+  margin-top: 8%;
+}
 
 #about-me .boxes img {
   border-radius: 50%;
   height: auto;
-  margin-top: 30px;
-}
-
-#about-me .boxes .info {
-  width: 800px;
 }
 
 #about-me h1 {
@@ -149,10 +157,6 @@ p {
 /*In education*/
 
 /*Colegio*/
-
-#education .boxes .info {
-  width: 800px;
-}
 
 #education .boxes img {
   border-radius: 10%;
