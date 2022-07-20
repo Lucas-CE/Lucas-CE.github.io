@@ -220,7 +220,35 @@ a {
 }
 
 @media (max-width: 800px) {
+  
+  nav li a {
+    font-size: 95%;
+  }
+
+  #presentation h1 {
+    font-size: 140%;
+  }
+
+  #presentation p {
+    font-size: 100%;
+  }
+
   .boxes {
     flex-direction: column;
+  }
+
+  .boxes .info {
+    width: 90%;
+  }
+
+  #education h2{
+    text-align: center;
+  }
+
+  #projects .boxes img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    margin: 0 10px;
   }
 }
