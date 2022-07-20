@@ -219,3 +219,8 @@ a {
   border-radius: 5%;
 }
 
+@media (max-width: 800px) {
+  .boxes {
+    flex-direction: column;
+  }
+}
