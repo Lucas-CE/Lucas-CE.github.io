@@ -86,18 +86,17 @@ nav li a:hover {
 
 #presentation {
   width: 70%;
-  height: 60%;
+  height: min-content;
   margin: 30px auto;
-  overflow: hidden;
   position: relative;
-  border-radius: 8px;
 }
 
 #presentation .background {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  height: 100%;
+  height: min-content;
   width: 100%;
+  border-radius: 8px;
   backdrop-filter: blur(2px);
 }
 
