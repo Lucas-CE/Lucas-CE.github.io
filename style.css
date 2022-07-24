@@ -1,9 +1,12 @@
 
 /*All elements*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 /*Body style*/
