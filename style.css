@@ -36,7 +36,7 @@ header .background img {
 
 
 header .content{
-    height: 650px;
+    height: 100vh;
     text-align: center;
     overflow:auto;
     color: rgb(255, 255, 255);
