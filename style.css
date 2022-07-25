@@ -40,7 +40,6 @@ header .content{
     text-align: center;
     overflow:auto;
     color: rgb(255, 255, 255);
-    padding-bottom:30px;
     position: relative;
   }
 
@@ -54,15 +53,16 @@ header .content p{
 
 nav {
   margin-top: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: transparent;
     display: inline-block;
+    height: min-content;
   }
 
 nav li {
@@ -74,8 +74,7 @@ nav li a {
     color: white;
     padding: 14px 16px;
     margin: 10px;
-    text-decoration: none;
-    font-size:110%;
+    font-size:120%;
 }
 
 nav li a:hover {
@@ -86,22 +85,19 @@ nav li a:hover {
 
 /*Presentation style*/
 
-
 #presentation {
   width: 70%;
-  height: min-content;
-  margin: 30px auto;
-  position: relative;
-}
-
-#presentation .background {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: min-content;
-  width: 100%;
   border-radius: 8px;
   backdrop-filter: blur(2px);
-}
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  }
 
 #presentation h1 {
   font-size: 6vw;
@@ -117,7 +113,7 @@ nav li a:hover {
 /*Cuerpo style*/
 
 .cuerpo {
-  margin: 5% 7%;
+  padding: 5% 7%;
 }
 
 
