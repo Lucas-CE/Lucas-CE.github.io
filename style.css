@@ -142,7 +142,7 @@ a {
 
 /*Secs space*/
 
-#about-me, #education, #interests, #projects {
+#about-me, #education, #interests {
   margin-bottom: 7%;
 }
 
@@ -164,6 +164,7 @@ a {
 .boxes .img {
   vertical-align: middle;
 }
+
 
 
 
@@ -198,23 +199,9 @@ a {
 
 
 /*Interests*/
-
-#interests p {
-  text-align: center;
-}
-
-
-/*Projects*/
-
-#projects .boxes {
-  justify-content:space-around;
-  margin-top: 5%;
-}
-
-#projects img {
-  height: 200px;
-  width: 200px;
+#interests .boxes img {
   border-radius: 5%;
+  margin: 20px 20px;
 }
 
 @media (max-width: 800px) {
@@ -243,10 +230,4 @@ a {
     text-align: center;
   }
 
-  #projects .boxes img {
-    height: 100px;
-    width: 100px;
-    border-radius: 5%;
-    margin: 0 10px;
-  }
 }
