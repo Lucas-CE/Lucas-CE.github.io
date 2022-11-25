@@ -1,142 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>My page</title>
+  <title>Portafolio: Lucas Carrasco</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
   <meta charset="utf-8"/> 
   <link rel="shortcut icon" href="imagenes/page-logo.png" />
   <link href="style.css" rel="stylesheet">
+  <meta name="description" content="Portfolio">
 </head>
 
 <body>
 
     <header>
 
-      <div class="background">
-        <img src="imagenes/fondo.jpg" alt="Sea photograph">
-      </div>
-
       <div class="content">
-        <nav>
-            <ul>
-                <li><a href="#about-me">Sobre mí</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
 
-
-        <div id="presentation">
-
-            <div class="pres-content">
-              <h1>¡Hola Mundo!</h1>
-              <p>
-                Mi nombre es Lucas Carrasco, estudiante de pregrado de ingeniería civil en computación, 
-                aficionado del análisis de datos, e interesado en la mejora de gestión de proyectos.
-              </p>
-            </div>
-
+        <div class="presentation">
+          <section> 
+            <h1>Lucas Carrasco</h1>
+            <p>Estudiante de Ingeniería Civil en Computación</p>
+            <p><a href="#cuerpo"><i class="fa fa-3x fa-angle-double-down"></i></a></p>
+          </section>
+            <!-- partial -->
+          <script  src="./escritor.js"></script>
         </div>
 
       </div>
 
     </header>
 
-    <div class="cuerpo">
+    <div id="cuerpo">
 
-      <div id="about-me">
-
-        <h1 class="title-sec">¿Quién soy?</h1>
-        
-        <div class="boxes">
-          <div class="img">
-            <img src="imagenes/foto-perf.jpeg" width="260" height="260">
-          </div>
-          
-          <div class="info">
-            <p>Me llamo Lucas Carrasco, tengo 21 años, soy de Santiago de Chile, y hace alrededor de un año
-              inicie mis estudios en el area de la computación.</p>
-            
-            <p>El año 2020 entré a la universidad de Chile a estudiar ingeniería civil, motivado por crear
-              soluciones e invenciones para el mundo de hoy y del mañana. Luego de 2 años en la universidad
-              inicie mis estudios formales en la especialidad de computación, donde, además de los cursos
-              que inscribí en la universidad, inicie cursos online de desarrollo web, con el objetivo
-              de crear este portafolio, y probar otras aplicaciones web.</p>
+      <div id="about-me" class="body-item">
+        <div class="content">
+          <h1 class="title-sec">About me</h1>
+          <div id="box">
+            <img id="helloSVG" src="imagenes/helloSVG.svg" alt="B"/>
+            <p>
+              Soy estudiante de 3er año de Ingeniería Civil en Computación en la Universidad de Chile. 
+              <br>Mis áreas de mayor interés son el desarrollo de software, y el machine learning y sus 
+              aplicaciones al mundo moderno.
+            </p>
           </div>
         </div>
-
-      </div>
-      
-      <div id="education">
-        
-        <h1 class="title-sec">Educación</h1>
-
-        <div class="boxes">
-          
-          <div class="img">
-            <img src="imagenes/logo-colegio.png" width="270" height="270">
-          </div>
-
-          <div class="info">
-            <h2>Colegio</h2>
-
-            <p>Egrese del <strong><a href="https://colegiosed.cl/" target="_blank">Colegio San 
-              Esteban Diacono</a></strong>, donde obtuve premios destacando mi compañerismo y mis calificaciones.</p>
-
-            <p>En este periodo fuí participe, y ganador de premios en algunos casos, de torneos en una
-               algunos deportes como futbol, ajedrez, entre otros.</p>
-          </div>
-
-        </div>
-
-        <div class="boxes">
-
-          <div class="img">
-            <img src="imagenes/logo-uni.png" width="300" height="300">
-          </div>
-
-          <div class="info">
-            <h2>Universidad</h2>
-
-            <p>Desde el año 2020 estudio en la <strong>Universidad de Chile</strong>, en específico,
-              en la <strong>Facultad de ciencias físicas y matemáticas</strong> de la misma universidad.
-              El año 2022 inicie mis estudios en la especialidad de computación.</p>
-          </div>
-
-        </div>
-          
       </div>
 
-    <div id="interests">
-      <h1 class="title-sec">Intereses</h1>
-
-      <div class="boxes">
-        
-        <div class="img">
-          <img src="imagenes/foto-intereses.jpg" width="270" height="270">
-        </div>
-
-        <div class="info">
-          <p>En el area de la computación me atraen mucho las areas de machine learning, análisis de datos
-            y desarrollo web.</p>
-          <p>En el ambito laboral, me parecen muy interesantes los estudios y practicas de el trabajo en equipo,
-            y la gestion de proyectos.</p>
-          <p>Alejandonos un poco del trabajo, entre mis hobbies estan los videojuegos, la música, hacer 
-             cursos o ver videos sobre temas que me interesan y salir con mis amigos.</p>
-        </div>
+      <div class="projects body-item">
+        <h1 class="title-sec">Mis projectos</h1>
+        <ul class="cards">
+          <li class="cards__item">
+            <div class="card">
+              <img class="card__image" src="imagenes/PORTFOLIO_IMG.png" alt="">
+              <div class="card__content">
+                <div class="card__title">Portafolio</div>
+                <p class="card__text">
+                  Este Portafolio fue diseñado por mi, tomando fragmentos de código de codepen.io para algunas 
+                  partes.
+                </p>
+                <button class="btn btn--block card__btn">
+                  <a href="https://github.com/Lucas-CE/Portafolio">GitHub</a>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
 
+    </div>     
+    
     <div id="contact">
       <h1 class="title-sec">Contacto</h1>
-      <p>Puedes contactarme por:</p>
       <ul>
         <li>Mail: <a href="mailto:lucas.carrascoestay@gmail.com">lucas.carrascoestay@gmail.com</a></li>
         <li>Telefono: +56957888150</li>
         <li><a href="https://www.linkedin.com/in/lucas-carrasco-estay-161173240" target="_blanck">Linkedin</a></li>
       </ul>
-    </div>
-  </div>       
+    </div>  
 
 </body>
 </html>

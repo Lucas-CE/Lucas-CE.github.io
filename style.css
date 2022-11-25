@@ -1,208 +1,197 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
 
-/*All elements*/
+/*COLORS
+color: #002626;
+color: #0E4749;
+color: #649E82;
+color: #C6DBF0;
+color: #EDEFDD;
+All elements*/
 
 html {
   scroll-behavior: smooth;
+  color: #edefdd;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  overflow: auto;
 }
+
+/* Importar fuente */
+
+@font-face {
+  font-family: codeFont;
+  src: url(fonts/SourceCodePro-SemiBold.ttf);
+}
+
+
+/* Estilo escritor */
+
+.selected:after {
+    content: '|'; /* the "|" character is also a good option */
+    opacity: 0;
+    animation: blinking 1s infinite steps(2, jump-none);
+}
+
+@keyframes blinking {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
 
 /*Body style*/
 
 body {
-    color: #fff;
-    font-family: Arial;
-    background-color: rgb(31, 31, 31);
-    margin: 0px;
+    font-family: 'codeFont';
+    background-color: #649e82;
     font-size: 130%;
-  }
+}
 
 
 /*Header style*/
 
-header .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+header {
+  height: 100vh;
+  margin: 0%;
 }
 
-header .background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+header .content {
+  margin: 8vh auto;
+  height: 84vh;
+  width: 94vw;
 }
 
-
-header .content{
-    height: 100vh;
-    text-align: center;
-    overflow:auto;
-    color: rgb(255, 255, 255);
-    position: relative;
-  }
-
-header .content p{
-  text-align: center;
-  line-height: 33px;
-}
-
-
-/*Navbar style*/
-
-nav {
-  margin-top: 12px;
-  position: relative;
-  overflow: hidden;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    height: min-content;
-  }
-
-nav li {
-    float:left;
-  }
-
-nav li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    margin: 10px;
-    font-size:120%;
-}
-
-nav li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-  }
-  
 
 /*Presentation style*/
 
-#presentation {
-  width: 70%;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
+.presentation h1, .presentation p{
+  font-family: 'codeFont';
   height: min-content;
-  border-radius: 8px;
-  backdrop-filter: blur(2px);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  }
-
-#presentation h1 {
-  font-size: 6vw;
+  opacity: 0;
 }
 
 
-#presentation p {
-  font-size:130%;
-  margin: 5%;
+.presentation h1{
+  margin-top: 22vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  width: 84vw;
+  font-size: 8vw;
+  text-align: center;
+  }
+
+.presentation p{
+  padding: 2%;
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+/* Scroll button style */
+
+.button {
+  opacity: 0;
+  margin: auto;
+  width: min-content;
+  height: min-content;
+}
+
+.fa.fa-3x.fa-angle-double-down {
+	color: #edefdd;
+	margin-top: 20px;
+}
+
+.fa.fa-3x.fa-angle-double-down:hover {
+	color: #C6DBF0;
 }
 
 
 /*Cuerpo style*/
 
-.cuerpo {
+#cuerpo {
   padding: 5% 7%;
 }
 
 
-/*Parrafos style*/
-
-p {
-  text-align: justify;
-  line-height: 30px;
+/*Body titles style*/
+#cuerpo h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 6vh;
 }
 
 
 /*Links style*/
 
 a {
-  color: #fff;
+  color: #edefdd;
   text-decoration:none;
 }
 
 
-/*Title sec style*/
-
-.title-sec {
-  text-align: center;
+/*Margin Body items*/
+.body-item {
+  margin: 12vh 0vw;
 }
-
-
-/*Secs space*/
-
-#about-me, #education, #interests {
-  margin-bottom: 7%;
-}
-
-
-
-/*Cajas contenedoras de informacion o img style*/
-.boxes {  
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-.boxes .info {
-  width: 70%;
-  height: min-content;
-  vertical-align: middle;
-}
-
-.boxes .img {
-  vertical-align: middle;
-}
-
-
 
 
 /*About me style*/
 
 #about-me {
-  margin-top: 8%;
+  text-align: center;
+  margin-top: 0vh;
+  height: 80vh;
 }
 
-#about-me .boxes img {
-  border-radius: 5%;
-  margin: 20px 20px;
+#about-me .content {
+  margin: 8vh 0vw;
+}
+
+#about-me #box {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+#about-me #box p {
+  text-align: justify;
+  font-size: 1.9vw;
+  margin: auto;
+}
+
+#about-me #box #helloSVG {
+  margin-right: 5vw;
+  width: 100vw; /* you can use % */
+  height: auto;
 }
 
 
-/*Education*/
 
-/*In education*/
+/*Project Style*/
 
-#education .boxes {
-  margin-bottom: 0px;
-}
-
-/*Colegio*/
-
-#education .boxes img {
-  transform: scale(0.8);
+.cards {
+  margin-top: 10vh;
 }
 
 
-/*Univerisdad*/
+/*Contact Style*/
 
-
-/*Interests*/
-#interests .boxes img {
-  border-radius: 5%;
-  margin: 20px 20px;
+#contact {
+  background-color: #002626;
+  padding: 3vw;
 }
+
+
+
 
 @media (max-width: 800px) {
   
@@ -218,16 +207,78 @@ a {
     font-size: 100%;
   }
 
-  .boxes {
-    flex-direction: column;
-  }
-
-  .boxes .info {
-    width: 90%;
-  }
-
   #education h2{
     text-align: center;
   }
 
+}
+
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+}
+.btn a {
+  color: #696969;
+}
+.cards {
+  color: #999999;
+  font-family: 'codeFont';
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards__item {
+  padding: 1rem;
+}
+.card {
+  height: 24vw;
+  width: 24vw;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
