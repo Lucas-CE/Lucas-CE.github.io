@@ -69,10 +69,13 @@ header .content {
 /* El tamaño de presentation será un rectangulo dentro del header.
 El tamaño de presentation es el mismo de .content del header */
 
+/* Se setea la opacidad de el titulo y de el parrafo en 0 para luego cambiarla a 1 con la animación */
 .presentation h1, .presentation p{
   opacity: 0;
 }
 
+/* Los margenes son para que el titulo quede al centro en altura y al medio en el ancho. 
+El tamaño de letra depende del ancho para que se adapte al tamaño del dispositivo. */
 .presentation h1{ 
   margin-top: 22vh;
   margin-left: auto;
@@ -80,10 +83,13 @@ El tamaño de presentation es el mismo de .content del header */
   width: 84vw;
   font-size: 8vw;
   text-align: center;
-  }
+}
 
+/* El padding es para que el texto del parrafo no tenga su contenedor pegado. 
+El tamaño de letra depende del ancho para que se adapte al tamaño del dispositivo. */
 .presentation p{
-  padding: 2%;
+  border: 2px solid red;
+  padding: 2vw 0;
   font-size: 2vw;
   text-align: center;
 }
