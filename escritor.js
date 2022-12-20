@@ -68,7 +68,6 @@ function randomLetter() {
 
 const h1 = document.querySelector('h1')
 const ps = document.querySelectorAll('p')
-const but = document.querySelector('a')
 
 //you can use an async function to animate one element at a time
 async function animateAll () {
