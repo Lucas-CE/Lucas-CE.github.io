@@ -57,12 +57,8 @@ body {
 
 /*Header style*/
 
-header {
-  height: 100vh;
-  margin: 0%;
-}
-
 header .content {
+  border: 2px solid red;
   margin: 8vh auto;
   height: 84vh;
   width: 94vw;
@@ -70,19 +66,17 @@ header .content {
 
 
 /*Presentation style*/
+/* El tamaño de presentation será un rectangulo dentro del header.
+El tamaño de presentation es el mismo de .content del header */
 
 .presentation h1, .presentation p{
-  font-family: 'codeFont';
-  height: min-content;
   opacity: 0;
 }
 
-
-.presentation h1{
+.presentation h1{ 
   margin-top: 22vh;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0%;
   width: 84vw;
   font-size: 8vw;
   text-align: center;
