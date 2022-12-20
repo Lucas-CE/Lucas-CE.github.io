@@ -58,7 +58,6 @@ body {
 /*Header style*/
 
 header .content {
-  border: 2px solid red;
   margin: 8vh auto;
   height: 84vh;
   width: 94vw;
@@ -88,7 +87,6 @@ El tamaño de letra depende del ancho para que se adapte al tamaño del disposit
 /* El padding es para que el texto del parrafo no tenga su contenedor pegado. 
 El tamaño de letra depende del ancho para que se adapte al tamaño del dispositivo. */
 .presentation p{
-  border: 2px solid red;
   padding: 2vw 0;
   font-size: 2vw;
   text-align: center;
@@ -97,16 +95,8 @@ El tamaño de letra depende del ancho para que se adapte al tamaño del disposit
 
 /* Scroll button style */
 
-.button {
-  opacity: 0;
-  margin: auto;
-  width: min-content;
-  height: min-content;
-}
-
 .fa.fa-3x.fa-angle-double-down {
 	color: #edefdd;
-	margin-top: 20px;
 }
 
 .fa.fa-3x.fa-angle-double-down:hover {
