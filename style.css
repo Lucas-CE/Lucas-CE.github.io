@@ -172,12 +172,36 @@ a {
   margin-top: 10vh;
 }
 
+.cards #github{
+  width: 2.5vw;
+}
+
+.btn {
+  height: fit-content;
+  background-color: white;
+  border: 0px solid #cccccc;
+  color: #696969;
+}
+
 
 /*Contact Style*/
 
 #contact {
   background-color: #002626;
   padding: 3vw;
+  text-align: center;
+}
+
+#contact .box {
+  margin: 4vh auto;
+  width: 30vw;
+  display: flex;
+  justify-content:space-around;
+  height: auto;
+}
+
+#contact img {
+  height: 5vw;
 }
 
 
@@ -204,15 +228,6 @@ a {
 }
 
 
-.btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
-  padding: 0.5rem;
-}
-.btn a {
-  color: #696969;
-}
 .cards {
   color: #999999;
   font-family: 'codeFont';
@@ -223,7 +238,7 @@ a {
   padding: 1rem;
 }
 .card {
-  height: 24vw;
+  height: 26.5vw;
   width: 24vw;
   background-color: white;
   border-radius: 0.3rem;
@@ -267,6 +282,7 @@ a {
   text-transform: uppercase;
 }
 .card__text {
+  padding: 1rem 0rem;
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
