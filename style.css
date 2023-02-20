@@ -46,6 +46,21 @@ html {
 }
 
 
+/* Estilo scroll bar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #696969;
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+
 /*Body style*/
 
 body {
@@ -206,7 +221,7 @@ a {
 }
 
 #contact img {
-  height: 5vw;
+  height: 3vw;
 }
 
 
