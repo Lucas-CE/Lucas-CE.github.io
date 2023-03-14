@@ -284,6 +284,7 @@ a {
   filter: contrast(70%);
   position: relative;
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  height: 40%;
 }
 .card__image::before {
   content: "";
@@ -304,6 +305,6 @@ a {
   padding: 1rem 0rem;
   flex: 1 1 auto;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
 }
