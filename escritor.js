@@ -66,14 +66,13 @@ function randomLetter() {
 }
 
 
-const h1 = document.querySelector('h1')
+const h1 = document.querySelectorAll('h1')
 const ps = document.querySelectorAll('p')
 
 //you can use an async function to animate one element at a time
 async function animateAll () {
-  await writeAnimation(h1, 70, 4)
+  await writeAnimation(h1[0], 70, 4)
   await writeAnimation(ps[0], 70, 2)
-  await writeAnimation(ps[1], 70, 0)
 };
 
 animateAll();

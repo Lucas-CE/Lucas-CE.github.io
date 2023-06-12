@@ -2,103 +2,103 @@
 <html lang="es">
 <head>
   <title>Mi Portafolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" >
-  <meta charset="utf-8"/> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Mi Portafolio: Lucas Carrasco">
   <link rel="shortcut icon" href="imagenes/page-logo.png" />
-  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
 
-      <div class="content">
-
-        <div class="presentation">
-          <section> 
-            <h1>Lucas Carrasco</h1>
-            <p>Estudiante de Ingeniería Civil en Computación</p>
-            <p><a href="#cuerpo"><i class="fa fa-3x fa-angle-double-down"></i></a></p>
-          </section>
-            <!-- partial -->
+      <div class="row vh-100 text-center mx-auto align-items-center">
+        <div class="col presentation">
+          <h1 class="fw-bold display-1">Lucas Carrasco</h1>
+          <p class="fs-4">Estudiante de Ingeniería Civil en Computación</p>
+          <!-- partial -->
           <script  src="./escritor.js"></script>
         </div>
-
       </div>
 
     </header>
 
     <div id="cuerpo">
 
-      <div id="about-me" class="body-item">
-        <div class="content">
-          <h1 class="title-sec">About me</h1>
-          <div id="box">
-            <img id="helloSVG" src="imagenes/helloSVG.svg" alt="B"/>
-            <p>
+      <div id="about-me" class="row vh-100 text-center mx-auto align-items-center">
+        <div class="col">
+          <h1 class="display-5 fw-bold mb-5">About me</h1>
+          <div class="row justify-content-center">
+            <img id="helloSVG" class="col-sm-12 col-md-6 col-lg-6 my-3" src="imagenes/helloSVG.svg" alt="B" />
+            <p class="col fs-4 col-sm-12 col-md-6 col-lg-6 my-3 mx-3 mx-md-2 mx-lg-2">
               Soy estudiante de 3er año de Ingeniería Civil en Computación en la Universidad de Chile. 
-              <br>Mis áreas de mayor interés son el desarrollo de software, y el machine learning y sus 
+              <br>
+              Mis áreas de mayor interés son el desarrollo de software, y el machine learning y sus 
               aplicaciones al mundo moderno.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="projects body-item">
-        <h1 class="title-sec">Mis proyectos</h1>
-        <ul class="cards">
-          <li class="cards__item">
-            <div class="card">
-              <img class="card__image" src="imagenes/PORTFOLIO_IMG.png" alt="">
-              <div class="card__content">
-                <div class="card__title">Portafolio</div>
-                <p class="card__text">
-                  Portafolio con mi información importante.
-                </p>
-                <button class="btn btn--block card__btn">
-                  <a href="https://github.com/Lucas-CE/Portafolio"  target="_blank">
-                    <img id="github" src="imagenes/github-logo.png" alt="">
-                  </a>
-                </button>
+      <div id="projects" class="container text-center mx-auto align-items-center">
+        <h1 class="text-center display-5 fw-bold mb-5">Mis proyectos</h1>
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-5 col-lg-4 my-3">
+            <div class="card text-bg-light">
+              <img src="imagenes/PORTFOLIO_IMG.png" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Portafolio</h5>
+                <p class="card-text">Portafolio con mis proyectos personales.</p>
+                <a type="button" class="btn" href="https://github.com/Lucas-CE/Portafolio">
+                  <img src="imagenes/github-mark.png" width="30" height="30"></img>
+                </a>
               </div>
             </div>
-          </li>
-          <li class="cards__item">
-            <div class="card">
-              <img class="card__image" src="imagenes/status_monitor.PNG" alt="">
-              <div class="card__content">
-                <div class="card__title">Server and website monitor</div>
-                <p class="card__text">
-                  Este es un monitor de estado para sitios web y servidores.
-                </p>
-                <button class="btn btn--block card__btn">
-                  <a href="https://github.com/Lucas-CE/Server-and-Website-status-monitor"  target="_blank">
-                    <img id="github" src="imagenes/github-logo.png" alt="">
-                  </a>
-                </button>
+          </div>
+          <div class="col-10 col-md-5 col-lg-4 my-3">
+            <div class="card text-bg-light">
+              <img src="imagenes/status_monitor.PNG" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Monitor de servidores y websites</h5>
+                <p class="card-text">Monitor del estado de servidores y websites.</p>
+                <a type="button" class="btn" href="https://github.com/Lucas-CE/Server-and-Website-status-monitor">
+                  <img src="imagenes/github-mark.png" width="30" height="30"></img>
+                </a>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
 
     </div>     
-    
-    <div id="contact">
-      <h1 class="title-sec">Contacto</h1>
-      <div class="box">
-        <a href="mailto:lucas.carrascoestay@gmail.com" target="_blank">
-          <img src="imagenes/gmail-logo.svg" alt="">
-        </a>
-        <a href="https://www.linkedin.com/in/lucas-carrasco-estay-161173240" target="_blanck">
-          <img src="imagenes/linkedin-logo.png" alt="">
-        </a>
-        <a href="https://github.com/Lucas-CE" target="_blank">
-          <img src="imagenes/github-logo.png" alt="">
-        </a>
+
+    <div class="mt-5 mt-md-0 footer container text-center p-4">
+      <div class="row justify-content-center my-2">
+        <div class="col-2 col-md-1">
+          <a href="mailto:lucas.carrascoestay@gmail.com" target="_blank">
+            <img src="imagenes/gmail-logo.svg" alt="">
+          </a>
+        </div>
+        <div class="col-2 col-md-1">
+          <a href="https://www.linkedin.com/in/lucas-carrasco-estay-161173240" target="_blanck">
+            <img src="imagenes/linkedin-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-2 col-md-1">
+          <a href="https://github.com/Lucas-CE" target="_blank">
+            <img src="imagenes/github-mark-white.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-3 mb-2">
+        <p class="m-0">© 2022
+          <a href="https://github.com/Lucas-CE/Portafolio">My portfolio</a>. All rights reserved. Created by
+          <a href="https://users.dcc.uchile.cl/~lcarrasc/">Lucas Carrasco</a>
+        </p>
       </div>
     </div>  
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
