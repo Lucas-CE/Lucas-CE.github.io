@@ -67,7 +67,8 @@ body {
   filter: contrast(100%);
 }
 
-#projects.container {
+#projects,
+#about-me {
   min-height: 100vh;
 }
 
